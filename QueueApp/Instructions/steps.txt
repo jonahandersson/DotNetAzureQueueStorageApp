@@ -1,15 +1,13 @@
 1. Azure CLI - Create Storage account using this  command 
 
 az storage account create 
---name articlesjcadev 
--g learn-64b65e20-e800-4a3a-859e-9030044d7eab 
---kind StorageV2 
---sku Standard_LRS
+--name <name> 
+-g <resource-group-name>
+--kind <whatkindofstoragetype> 
+--sku <sku-typ>
 
 -- To Show connection String 
-az storage account show-connection-string --name articlesjcadev --resource-group learn-64b65e20-e800-4a3a-859e-9030044d7eab
-
-
+az storage account show-connection-string --name <nameofstorageaccount> --resource-group <your resource group name>
 
 
 -- If you want to test when a queue doesn't exist, 
