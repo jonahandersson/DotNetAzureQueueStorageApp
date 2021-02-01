@@ -1,0 +1,20 @@
+1. Azure CLI - Create Storage account using this  command 
+
+az storage account create 
+--name articlesjcadev 
+-g learn-64b65e20-e800-4a3a-859e-9030044d7eab 
+--kind StorageV2 
+--sku Standard_LRS
+
+-- To Show connection String 
+az storage account show-connection-string --name articlesjcadev --resource-group learn-64b65e20-e800-4a3a-859e-9030044d7eab
+
+
+
+
+-- If you want to test when a queue doesn't exist, 
+you can delete the queue (and all the data) with the Azure CLI. Make sure to replace the <connection-string> parameter (or set the environment variable).
+
+Azure CLI
+
+az storage queue delete --name nameofQueuue --connection-string <connection-string> 
